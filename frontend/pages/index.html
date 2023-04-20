@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avaliação 20-04-23</title>
-    <link rel="stylesheet" hr   ef="../styles/style.css">
+    <title>Vendas</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 
-<body></body>
+<body>
+    <div class="vendedores">
+        <h3>VENDEDORES</h3>
+        
+        <table>
+            <thead></thead>
+            <tbody id="listVendedores"></tbody>
+        </table>
+
+        <p>ALTERAR DADOS DOS VENDEDORES</p>
+        <form class="altVendedores"></form>
+    </div>
+
+    <div class="vendasLog">
+        <h3>VENDAS</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>PRODUTO</th>
+                    <th>VENDEDOR</th>
+                    <th>QUANT.</th>
+                    <th>DATA</th>
+                </tr>
+            </thead>
+            <tbody id="listVendas"></tbody>
+        </table>
+    </div>
+    
+    <div class="altVendas">
+        <p>ALTERAR VENDA EXISTENTE</p>
+        <table></table>
+    </div>
+    
+    <div class="novaVenda">
+        <h3>LANÇAR NOVA VENDA</h3>
+
+        <form class="addVenda">
+            <input type="number" placeholder="Quantidade" id="addQuantidade" nome="addQuantidade">
+            <input type="number" placeholder="ID do Produto" id="addProduto" nome="addProduto">
+            <input type="number" placeholder="ID do Vendedor" id="addVendedor" nome="addVendedor">
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+</body>
 
 <script src="../scripts/script.js"></script>
 </html>
